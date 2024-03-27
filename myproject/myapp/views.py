@@ -19,7 +19,7 @@ def index(request):
                 <title>Title</title>
             </head>
             <body>
-            Title<br>Hello world<br>Hello world<br>Hello world<br>Hello world<br>Hello world<br>Hello world<br>
+            Title<br>My first<br>Django app<br>
             </body>
             </html>""")
 
@@ -35,6 +35,6 @@ def about(request):
                 <title>Title</title>
             </head>
             <body>
-            Title<br>Title<br>Title<br>Title<br>Title<br>Title<br>Title<br>
+            My name is<br>Lida<br>
             </body>
             </html>""")
