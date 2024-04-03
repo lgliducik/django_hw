@@ -20,5 +20,5 @@ def view_show_products(request, client_name):
     date_7 = timezone.now() - timedelta(days=7)
     products_7 = [i for i in products_30 if i.date > date_7]
 
-    context = {client: client, 'products_7': products_7, 'products_30': products_30, 'products_365': products_365}
+    context = {'client': client, 'products_7': products_7, 'products_30': products_30, 'products_365': products_365}
     return render(request, 'myapp3/view_show_products.html', context)
