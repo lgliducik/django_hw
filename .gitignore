@@ -1,3 +1,5 @@
 .idea/
 myproject/django.log
-myproject/myapp/__pycache__/views.cpython-39.pyc
+__pycache__
+db.sqlite3
+myproject/temp

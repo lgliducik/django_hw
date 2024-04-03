@@ -1,0 +1,40 @@
+{% extends './base.html' %}
+{% block title %}{{ client.name }}'s products{% endblock %}
+{% block content %}
+<h2>Имя клиента: {{ client.name }}</h2>
+<h2>Cписок заказанных клиентом товаров за последние 7 дней</h2>
+<table>
+    {% for product in products_7 %}
+    <tr>
+        <td>{{ product.name }}
+        <td>{{ product.description }}
+        <td>{{ product.price }}
+        <td>{{ product.date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Cписок заказанных клиентом товаров за последние 30 дней</h2>
+<table>
+    {% for product in products_30 %}
+    <tr>
+        <td>{{ product.name }}
+        <td>{{ product.description }}
+        <td>{{ product.price }}
+        <td>{{ product.date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Cписок заказанных клиентом товаров за последние 365 дней</h2>
+<table>
+    {% for product in products_365 %}
+    <tr>
+        <td>{{ product.name }}
+        <td>{{ product.description }}
+        <td>{{ product.price }}
+        <td>{{ product.date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
