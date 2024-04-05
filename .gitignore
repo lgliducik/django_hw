@@ -3,3 +3,4 @@ myproject/django.log
 __pycache__
 db.sqlite3
 myproject/temp
+myproject/media/
