@@ -14,10 +14,10 @@ class Client(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(default='', blank=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     count = models.IntegerField(blank=True, null=True)
-    date = models.DateTimeField(max_length=100)
+    date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f'Product name: {self.name}'
